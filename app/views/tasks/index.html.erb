@@ -1,0 +1,11 @@
+<h1>Tasks list</h1>
+
+<% @tasks.each do |t| %>
+<%= link_to t.title, task_path(t) %> <br>
+<% end %>
+
+<form action="/tasks/new">
+  <input type="submit" class="btn btn-primary" value="Create new">
+</form>
+
+
